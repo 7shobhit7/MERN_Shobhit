@@ -1,0 +1,111 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.page
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#left-area
+{
+    /* border: 3px solid black; */
+    width: 50%;
+    height: 100vh;
+    background-color: palevioletred;
+
+    
+    
+    
+}
+#iframe
+{
+    /* border: 3px solid black; */
+    width: 100%;
+    height: fit-content;
+    height: 91.5vh;
+
+
+}
+iframe
+{
+    border: 0px;
+    width: 100%;
+    font-size: 15px;
+    background-color: lightcyan;
+    height: 91.5vh;
+
+
+}
+#right-area
+{
+    /* border: 3px solid black; */
+    width: 50%;
+    height: 100vh;
+    background-color: lightgreen;
+
+}
+.preview
+{
+    /* border: 3px solid palevioletred; */
+    height: 5vh;
+    width: 100%;
+    background-color: palevioletred;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.yourPage
+{
+    /* border: 3px solid palevioletred; */
+    height: 5vh;
+    width: 100%;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.first
+{
+    /* border: 3px solid grey; */
+    height: 30vh;
+
+}
+.second
+{
+    /* border: 3px solid grey; */
+        height: 30vh;
+
+}
+.third
+{
+    /* border: 3px solid grey; */
+    height: 30vh;
+}
+textarea
+{
+    width: 99%;
+    height: 102%;
+    font-size: 20px;
+}
+.first textarea
+{
+    background-color: lightblue;
+    
+}
+.second textarea
+{
+    background-color: lightcoral;
+    
+}
+.third textarea
+{
+    background-color: lightsalmon;
+    
+}

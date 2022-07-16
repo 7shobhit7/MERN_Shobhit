@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpreter</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="./Interpreter.css">
+    <!--JavaScript  -->
+    <script>
+        function htmlCode()
+        {
+           
+            var HTML=document.getElementById("HTML").value;
+            var CSS="<style>" + document.getElementById("CSS").value + "</style>";
+          var JS="<script>" + document.getElementById("JavaScript").value +  "</scr"+"ipt>";
+            
+            frame=document.getElementById("preview").contentWindow.document;
+            frame.open();
+            frame.write(HTML+CSS+JS);
+            frame.close();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="page">
+
+
+        <!-- left side -->
+        <div id="left-area" onkeyup="htmlCode()">
+            <div class="preview">
+                preview:
+            </div>
+
+            <div id="iframe">
+                <iframe id="preview"></iframe>
+            </div>
+        </div>
+
+        <!-- right-side -->
+        <div id="right-area">
+            <div class="yourPage">
+                Your Page:
+            </div>
+           
+            <!-- Html block -->
+            <div class="first" >
+                <textarea placeholder="HTML CODE:"  id="HTML" onkeyup="htmlCode()"></textarea>
+            </div>
+            <!-- CSS block -->
+            <div class="second">
+                <textarea placeholder="CSS CODE:"  id="CSS" onkeyup="htmlCode()"></textarea>
+            </div>
+            <!-- Js block -->
+            <div class="third">
+                <textarea placeholder="JavaScript CODE:" id="JavaScript" onkeyup="htmlCode()"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
